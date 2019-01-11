@@ -1,0 +1,55 @@
+{
+  "name": "webcontroll",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "description": "Controll your websites in one central app!",
+  "author": "Janis Jansen",
+  "homepage": "./",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.9",
+    "@fortawesome/free-solid-svg-icons": "^5.6.0",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "concurrently": "^4.1.0",
+    "electron-is-dev": "^1.0.1",
+    "js-sha256": "^0.9.0",
+    "react": "^16.6.3",
+    "react-alert": "^4.0.4",
+    "react-alert-template-basic": "^1.0.0",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "react-transition-group": "^2.5.1",
+    "wait-on": "^3.2.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-builder": "^20.38.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "electron .",
+    "electron-pack": "build main=build/electron.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "build": {
+    "appId": "com.example.electron-cra",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
